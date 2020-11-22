@@ -1,0 +1,29 @@
+.Form{
+  background-color: #242424;
+  display:flex;
+  flex-flow: column;
+  width:50rem;
+  height:50vh;
+  
+}
+
+.socialSignin {
+  margin: 5rem 0 0 0 0;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1.5rem auto 0;
+
+  a {
+    color: #fff;
+    font-family:Roboto,Open, sans-serif;
+
+    &:active:hover{
+      text-decoration: underline;
+    }
+  }
+
+}

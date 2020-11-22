@@ -1,0 +1,204 @@
+.btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 300;
+  color: white;
+  background-color:#6200EE;
+  padding: 1rem 10px;
+  margin: 1rem;
+  border: 0;
+  outline: none;
+  white-space: nowrap;
+  border-radius: 6px;
+  cursor: pointer;
+}
+  :root {
+    --primary:#fff;
+}
+
+.btn--primary {
+    background-color:var(--primary);
+    color:#aa00ff;
+    padding:0.5rem;
+    border: 0.1rem solid var(--primary);
+    transform:scale(1.1);
+}
+.btn--primary:hover{
+    background-color: #aa00ff;
+}
+
+.btn--outline {
+    background-color:#6200EE;
+    color:#fff;
+    padding:0.5rem;
+    border:0.1rem solid var(--primary);
+    transform:scale(1.1);
+    transition:all 0.3s ease out;
+}
+
+.btn--outline:hover{
+    background-color: #aa00ff !important;
+}
+
+.btn--cart{
+    background-color:#6200EE;
+    color:#fff;
+    border:0.1rem solid #E1BEE7;
+    transition:all 0.3s ease out;
+}
+.btn--cart:hover{
+    transition: all 0.6s ease out;
+    &:active{
+      transform:scale(1.0);
+    }
+}
+
+.btn--buy{
+    background-color:#6200EE;
+    color:#fff;
+    padding:1.8rem;
+    margin:0.5rem 0.7rem;
+    border:0.1rem solid #E1BEE7;
+    transition:all 0.3s ease out;
+}
+.btn--buy:hover{
+    
+    transition: all 0.6s ease out;
+    
+}
+
+.FormButton{
+    background: #6200EE;
+    width:90%;
+    padding: 16px 16px;
+    border:none;
+    border-radius: 6px;
+    color:#fff;
+    font-size:20px;
+    text-transform: uppercase;
+    margin:3rem auto 0;
+    cursor: pointer;
+}
+.FormContact{
+    background-color:#6200EE!important;
+    color:#fff !important;
+    padding: 0.3rem 0;
+    border:0.2rem solid #717981;
+    border-radius: 4px;
+    max-width: 45%;
+    justify-content: right;
+     
+}
+.FormContact:hover{
+    background-color:#18bfef !important;
+    color:#fff !important;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .btn--cart{
+        margin-right: 2rem;
+
+    }
+}
+.btn--medium {
+    padding: 1.6rem 10px;
+    font-size:18px;
+}
+
+.btn--large {
+    padding:1.2rem 2.6rem;
+    font-size: 1.0rem;
+    margin:6px;
+}
+
+.btn--mobile {
+    text-align:center;
+    border-radius:0.4rem;
+    width:100%;
+    text-decoration:none;
+    font-size:1.5rem;
+    background-color: transparent;
+    color:#fff;
+    padding:1.4rem 2.0rem;
+    border:0.1rem solid #fff;
+    transition: all 0.3s ease-out;
+}
+
+.btn--wide {
+    padding:1.2rem 6.4rem;
+    font-size: 1.0rem;
+}
+
+ .btn--medium:hover, .btn--mobile:hover{
+    transition: all 0.3s ease-out;
+    background:#6b55e6;
+    color:#fff;
+
+    &.btn--medium:active{
+      transform:scale(1.1);
+    }
+}
+
+
+.btn--wide:hover{
+    color:#fff;
+    background-color:#8e44ad;
+    transition: 0.2s ease-out;
+}
+
+.btn-link{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-decoration:none;
+    height:100%;
+    width:100%; 
+}
+
+.blue{
+    background-color: #6200EE;
+    color:#fff;
+    border:none;
+}
+
+.purple{
+    background-color: #aa00ff;
+    color:#fff;
+    border:none;
+}
+
+.primary{
+    background-color: #242424;
+    color:#fff;
+    border:none;
+}
+
+.primary:hover{
+    background-color: #fff;
+    color:#242424;
+    border:none;
+}
+
+.green{
+    background-color: #AED581;
+    color:#fff;
+    border:none;
+}
+.green:hover{
+    background-color: #242424;
+    color:#fff;
+    border:none;
+}
+
+
+  
+
+
+
+
