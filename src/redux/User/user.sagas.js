@@ -12,6 +12,7 @@ export function* getSnapshotFromUserAuth(user, additionalData = {}) {
       signInSuccess({
         id: snapshot.id,
         ...snapshot.data()
+      
       })
     );
 
@@ -29,6 +30,8 @@ export function* emailSignIn({ payload: { email, password } }) {
     // console.log(err);
   }
 }
+
+
 
 export function* onEmailSignInStart() {
   yield takeLatest(userTypes.EMAIL_SIGN_IN_START, emailSignIn);
@@ -73,12 +76,14 @@ export function* signUpUser({ payload: {
 } }) {
 
   if (password !== confirmPassword) {
-    const err = ['Password Don\'t match'];
+    const err = ["Password do not match!"]; 
     yield put(
       userError(err)
     );
     return;
   }
+  
+  
 
   try {
     const { user } = yield auth.createUserWithEmailAndPassword(email, password);

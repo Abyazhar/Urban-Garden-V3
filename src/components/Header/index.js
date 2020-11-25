@@ -42,7 +42,7 @@ const Header = props => {
             </li>
             <li>
               <Link to="/search">
-                Search
+                Shop
               </Link>
             </li>
           </ul>

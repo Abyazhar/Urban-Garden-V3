@@ -34,7 +34,7 @@ export const handleUserProfile = async ({ userAuth, additionalData }) => { //pus
         ...additionalData
       });
     } catch(err) {
-      console.log("Error");
+      return("Failed To Sign Up");
     }
   }
 

@@ -60,7 +60,7 @@ const EmailPassword = props => {
           </ul>
         )}
 
-        <form onSubmit={handleSubmit}>
+        <form className='form' onSubmit={handleSubmit}>
 
           <FormInput
             type="email"
@@ -70,7 +70,7 @@ const EmailPassword = props => {
             handleChange={e => setEmail(e.target.value)}
           />
 
-          <Button type="submit">
+          <Button type="submit" buttonStyle='FormButton'>
             Email Password
           </Button>
 

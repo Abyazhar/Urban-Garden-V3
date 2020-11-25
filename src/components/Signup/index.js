@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { signUpUserStart } from './../../redux/User/user.actions';
 import './styles.scss';
 
@@ -25,9 +25,10 @@ const Signup = props => {
 
   useEffect(() => {
     if (currentUser) {
-      reset();
+      reset(); 
       history.push('/');
     }
+    
 
   }, [currentUser]);
 
@@ -109,6 +110,12 @@ const Signup = props => {
             placeholder="Confirm Password"
             handleChange={e => setConfirmPassword(e.target.value)}
           />
+
+           <div className="links">
+              <Link to="/login">
+              Already register? Sign in
+              </Link>
+            </div>
 
           <Button buttonStyle='FormButton' type="submit">
             Register

@@ -164,12 +164,13 @@
         display:flex;
         flex-flow: row;
         justify-content:center;
+        margin-bottom:2rem;
     }
     
     .real-container{
-        z-index: 1;
+        z-index:1;
         object-fit: cover;
-        height:100vh;
+        height:50vh;
         width:50vh;
         display:flex;
         flex-direction: column;
